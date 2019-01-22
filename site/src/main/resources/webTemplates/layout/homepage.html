@@ -10,19 +10,76 @@
     <th:block th:replace="layout/partials/nav" />
 
     <div class="main">
-        <div class="container-fluid">
-
-            <div class="row">
+        <div class="container">
+                <div id="carousel-slider-generic" class="row carousel slide" data-ride="carousel">
+                        <!--Carousel Indicators-->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-slider-generic" class="active">
+                            </li>
+                            <li data-target="#carousel-slider-generic">
+                            </li>
+                            
+                            <li data-target="#carousel-slider-generic">
+                            </li>
+                            <li data-target="#carousel-slider-generic">
+                            </li>
+                        </ol>
+                        <!--End of Carousel Indicators-->
+                    
+                        <!--Carousel Slides-->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <a href="/hot-sauces">
+                                    <img blc:src="@{/cmsstatic/img/banners/shirt-special.jpg}" style="width: 100%"/>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="/register">
+                                    <img blc:src="@{/cmsstatic/img/banners/shirt-special.jpg}" style="width: 100%"/>
+                                </a>
+                            </div>
+                            
+                            <div class="item">
+                                <a href="/hot-sauces/sudden_death_sauce">
+                                    <img blc:src="@{/cmsstatic/img/banners/shirt-special.jpg}" style="width: 100%"/>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="/hot-sauces/bull_snort_cowboy_cayenne_pepper_hot_sauce">
+                                    <img blc:src="@{/cmsstatic/img/banners/shirt-special.jpg}" style="width: 100%"/>
+                                </a>
+                            </div>
+                        </div>
+                        <!--End of Slides-->
+                    
+                        <!-- Carousel Controls -->
+                        <a class="left carousel-control" href="#carousel-slider-generic" data-slide="prev">
+                            <i class="material-icons">keyboard_arrow_left</i>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-slider-generic" data-slide="next">
+                            <i class="material-icons">keyboard_arrow_right</i>
+                        </a>
+                        <!--End Controls-->
+                    </div>
+                    <!--END of Homepage Ad Banner Carousel-->
+            <!-- <div class="row">
                 <a th:href="@{/merchandise}">
                     <img class="img-responsive full-width" blc:src="@{/cmsstatic/img/banners/shirt-special.jpg}" />
                 </a>
-            </div>
+                <a th:href="@{/merchandise}">
+                    <img class="img-responsive full-width" blc:src="@{/cmsstatic/img/banners/shirt-special.jpg}" />
+                </a>
+            </div> -->
 
             <div class="container">
 
                 <div class="row text-center">
-                    <div id="home_feature">
-                        <h2>HOT SAUCE AFICIONADO?</h2> Create an account to join our Heat Clinic Frequent Care Program. The place to get all the deals on burn treatment.
+                    <div class="col-sm-4 col-md-4">
+                        <img src="" alt="">
+                        <span>
+                            <h3></h3>
+                            <p></p>
+                        </span>
                     </div>
                 </div>
 
@@ -30,7 +87,7 @@
 
                 <div class="row">
                     <h3 class="text-center">
-                        The Heat Clinic's Top Selling Sauces
+                        Shop by room
                     </h3>
 
                     <th:block th:if="${products}" id="products" class="group" th:each="product : ${products}" th:object="${product}" >

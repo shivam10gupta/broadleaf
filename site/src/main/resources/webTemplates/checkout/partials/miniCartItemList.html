@@ -38,7 +38,15 @@
 
         <!-- Per Unit Price -->
         <span blc:price="*{getPriceBeforeAdjustments(true, true)}" class="mini-cart-item-price"></span>
-        <span class="mini-cart-item-quantity"> x [[*{quantity}]]</span>
+        <div class="mini-cart-color-part">
+                <label for="">Color : </label>
+                <span class="mini-cart-item-color">Red</span>
+            </div>
+        <div class="mini-cart-quantity-part">
+            <label for="">Qty : </label>
+            <span class="mini-cart-item-quantity">[[*{quantity}]]</span>
+        </div>
+        
 
         <!-- Item Actions -->
         <ul th:unless="${excludeOrderItemActions}" class="mini-cart-item-actions">
@@ -48,11 +56,11 @@
                 </th:block>
 
                 <th:block th:if="${item instanceof T(org.broadleafcommerce.core.order.domain.DiscreteOrderItem)}">
-                    <a th:unless="${@blSystemPropertiesService.resolveBooleanSystemProperty('solr.index.use.sku')}" class="btn btn-simple btn-bordered btn-xs js-removeFromCart" th:href="@{/cart/remove(orderItemId=*{id}, productId=*{product.id})}">Remove</a>
-                    <a th:if="${@blSystemPropertiesService.resolveBooleanSystemProperty('solr.index.use.sku')}" class="btn btn-simple btn-bordered btn-xs js-removeFromCart" th:href="@{/cart/remove(orderItemId=*{id}, skuId=*{sku.id})}">Remove</a>
+                    <a th:unless="${@blSystemPropertiesService.resolveBooleanSystemProperty('solr.index.use.sku')}" class="btn btn-simple btn-bordered btn-xs js-removeFromCart" th:href="@{/cart/remove(orderItemId=*{id}, productId=*{product.id})}"><i class="fa fa-times"></i></a>
+                    <a th:if="${@blSystemPropertiesService.resolveBooleanSystemProperty('solr.index.use.sku')}" class="btn btn-simple btn-bordered btn-xs js-removeFromCart" th:href="@{/cart/remove(orderItemId=*{id}, skuId=*{sku.id})}"><i class="fa fa-times"></i></a>
                 </th:block>
                 <th:block th:unless="${item instanceof T(org.broadleafcommerce.core.order.domain.DiscreteOrderItem)}">
-                    <a class="btn btn-simple btn-xs js-removeFromCart" th:href="@{/cart/remove(orderItemId=*{id})}">Remove</a>
+                    <a class="btn btn-simple btn-xs js-removeFromCart" th:href="@{/cart/remove(orderItemId=*{id})}"><i class="fa fa-times"></i></a>
                 </th:block>
             </li>
         </ul>

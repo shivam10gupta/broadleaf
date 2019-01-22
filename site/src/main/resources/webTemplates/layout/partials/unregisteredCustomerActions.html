@@ -1,17 +1,14 @@
 <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-        <i class="fa fa-user-circle"></i>
+            <i class="fa fa-user-circle"></i>
     </a>
     <ul class="dropdown-menu account-actions">
-        <!-- <li>
-            <a th:href="@{/account}">My Profile</a>
-        </li> -->
         <li>
-            Hi, <a th:text="${customer.firstName}"></a>
+            <a th:href="@{/login}">Sign in or Register</a>
         </li>
         <li>
             <i class="fa fa-user-circle"></i>
-            <a th:href="@{/account}">My Account</a>
+            <a th:href="@{/login}">My Account</a>
         </li>
         <li>
             <i class="fa fa-lightbulb"></i>
@@ -22,7 +19,7 @@
             <a th:href="@{/login}">Help</a>
         </li>
         <!-- <li>
-            <a th:href="@{/logout}" th:utext="#{home.logout}">Logout</a>
-        </li> -->
+                <a th:href="@{/logout}" th:utext="#{home.logout}">Logout</a>
+            </li> -->
     </ul>
 </li>

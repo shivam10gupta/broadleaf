@@ -13,7 +13,7 @@ body.sandbox-preview .navbar-fixed-top, body.csr-mode .navbar-fixed-top {
     padding-right: 0;
 }
 .navbar-default .container-fluid .navbar-collapse {
-    padding: 0 10%;
+    padding: 0 5%;
 }
 
 .navbar-brand {
