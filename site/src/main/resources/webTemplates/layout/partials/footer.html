@@ -1,25 +1,32 @@
 <footer class="group" blc:cache="true">
-
-    <div class="col-md-4">
-        <nav>
-            <ul>
-                <li><a href="/about_us"><span th:utext="#{footer.aboutUs}">About Us</span></a></li>
-                <li><a href="/contactus"><span th:utext="#{footer.contact}">Contact Us</span></a></li>
-                <li><a href="#"><span th:utext="#{footer.privacyPolicy}">Privacy Policy</span></a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="col-md-4">
-        <div>
-        <div class="blc-brand">
-            <p>Powered by&nbsp;</p>
-            <img th:src="@{/img/broadleaf-seal.png}" alt="Broadleaf Commerce" />
-            <p>&copy; Copyright 2013</p>
-        </div>
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div class="site-social-media-mobile">
+       <div class="row">
+          <div class="col-sm-6 col-md-6">
+          <h1>Our Newsletter, Join and Get ₦5,000 OFF</h1>
+          <div class="newsletter-form-desc">We will email you a voucher worth ₦5,000 off your first order over ₦50,000. By subscribing you agree to our <a href="/terms-conditions" style="text-decoration: underline;" target="_blank">Terms &amp; Conditions</a> and <a href="/privacy-policy-cookie-restriction-mode" style="text-decoration: underline;" target="_blank">Privacy &amp; Cookie Policy</a></div>
+          </div>
+          <div class="col-sm-6 col-md-6">
+          <form>
+            <input type="text" name="email-field" class="news-letter-email">
+            <button type="submit" value="GO">GO</button>
+          </form>
+          </div>
+       </div>
+       
+       <div class="row">
+         <div class="col-sm-3 col-md-3">
+             <h2>Customer Service</h2>
+             <p>Your Accounts</p>
+             <p>Returns & refunds</p>
+             <p>Delivery & collections</p>
+             <p>FAQs</p>
+         </div>
+         <div class="col-sm-3 col-md-3">
+          <h2>Our Company</h2>
+             <p>Contact us</p>
+             <p>About us</p>
+             <p>Privacy & cookies policy</p>
+             <p>Terms & conditions</p>
+              <div class="site-social-media-mobile">
             <a href="https://www.facebook.com/BroadleafCommerce" class="btn btn-simple btn-facebook">
                 <i class="fa fa-facebook-official"></i>
             </a>
@@ -39,7 +46,41 @@
                 <i class="fa fa-youtube-play"></i>
             </a>
         </div>
+         </div>
+         <div class="col-sm-3 col-md-3">
+         <h2>Our Showroom</h2>
+             <p><i class="fa fa-map-marker-alt"></i>15A Emma Abimbola Cole Street,</br>Off Fola Osibo, Lekki Phase 1</br>Lagos, Nigeria</p>
+             <p><i class="fa fa-phone"></i>0903 794 4292</p>
+             <p><i class="fa fa-hands-helping"></i>Portfolio</p>
+           
+         </div>
+         <div class="col-sm-3 col-md-3">
+           
+         </div>
+       </div>
+
+    <!-- <div class="col-md-4">
+        <nav>
+            <ul>
+                <li><a href="/about_us"><span th:utext="#{footer.aboutUs}">About Us</span></a></li>
+                <li><a href="/contactus"><span th:utext="#{footer.contact}">Contact Us</span></a></li>
+                <li><a href="#"><span th:utext="#{footer.privacyPolicy}">Privacy Policy</span></a></li>
+            </ul>
+        </nav>
+    </div> -->
+    <div class="row">
+        <div>
+        <div class="blc-brand">
+            <p>&copy; Precise Lighting Limited 2019. All rights reserved</p>
+            <!-- <p>Powered by&nbsp;</p>
+            <img th:src="@{/img/broadleaf-seal.png}" alt="Broadleaf Commerce" />
+            <p>&copy; Copyright 2013</p> -->
+        </div>
+        </div>
     </div>
+    <!-- <div class="col-md-4">
+       
+    </div> -->
 
     <div th:remove="all">
         <!--

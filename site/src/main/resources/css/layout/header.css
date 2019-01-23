@@ -24,7 +24,7 @@ body.sandbox-preview .navbar-fixed-top, body.csr-mode .navbar-fixed-top {
     display: block;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    content: url(/img/the-heat-clinic-logo-internal.png);
+    /* content: url(/img/the-heat-clinic-logo-internal.png); */
     width: 120px;
     transform: scale(1.92);
     transition: all .4s ease-in-out;
@@ -459,3 +459,154 @@ body.sandbox-preview .navbar-fixed-top, body.csr-mode .navbar-fixed-top {
         display: inherit;
     }
 }
+
+.navbar .navbar-left .user-mobile{
+	color: #000000;
+    font-weight: 500;
+}
+
+.navbar .navbar-left .user-mobile i{
+	font-size: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.navbar .navbar-left .showroom-status{
+	font-size: 15px;
+    margin-left: 40px;
+    color: #000000;
+    font-weight: 500;
+}
+
+.navbar .navbar-left{
+	padding-top: 10px;
+}
+
+.navbar .navbar-left .user-mobile{
+	color: #000000;
+    font-weight: 500;
+}
+
+.js-searchForm input{
+	border-bottom: #ddd !important;
+	height: 32px !important;
+}
+
+.js-searchForm .input-group-button{
+	margin-left: -25px !important;
+}
+
+.js-searchForm button{
+	color: #064a61 !important;
+}
+
+.js-searchForm button i{
+	font-weight: bold !important;
+	font-size: 22px !important;
+}
+
+.navbar .navbar-nav > li > a{
+	color: #064a61 !important;
+}
+
+.account-actions{
+	padding: 0 !important;
+}
+
+.account-actions li{
+	border: 1px solid #ddd;
+    margin-bottom: 3px;
+}
+
+.account-actions li a{
+	font-weight: 400;
+    color: #000000;
+    padding: 5px;
+    padding-left: 20px;
+    margin: 0 5px;
+}
+
+.account-actions li i{
+	position: absolute;
+    top: 7px;
+    left: 5px;
+    color: #000000;
+}
+
+.cart-count-badge{
+	color: #ffffff;
+    background: #00BBDF;
+    top: -8px;
+    left: -5px;
+}
+
+.navbar-nav.main-menu  > li > a{
+	color: #000000 !important;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+ .order-status-type{
+ margin-top: 60px;
+ }
+ 
+ .order-status-type div.col-sm-4, .order-status-type div.col-md-4{
+ text-align: left;
+ }
+ 
+ .order-status-type img{
+ vertical-align: super;
+ margin-right: 10px;
+ }
+ 
+ .order-status-type span{
+ display: inline-block;
+ }
+ 
+ .order-status-type span h3{
+ font-size: 18px;
+    color: #000000;
+    margin: 0;
+    font-weight: 500;
+ }
+ 
+ .order-status-type span p{
+ font-size: 14px;
+    color: #444444;
+    font-weight: 600;
+ }
+ 
+ .home-additional-task h1{
+ font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    color: #242728;
+    font-weight: 700;
+    margin: 0 0 10px;
+    display: inline-block;
+ }
+ 
+ .home-additional-task p{
+ line-height: 20px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #444444;
+ }
+ 
+ .home-additional-task button{
+ background: #00bbdf;
+    box-shadow: 0 0 5px rgba(0, 187, 223, .5);
+    padding: 10px 20px;
+    height: 40px;
+    color: #fff !important;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    /* outline: none; */
+    border: none;
+ }
+ 
+ .home-additional-task img{
+ width: 100%;
+ }

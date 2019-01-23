@@ -1,4 +1,4 @@
-<li class="dropdown languages" th:if="${(#module.isPresent('Theme') and (#theme.attr('showFlags') == null or #theme.attr('showFlags'))) or !#module.isPresent('Theme')}">
+<li class="dropdown languages" style="display: none;" th:if="${(#module.isPresent('Theme') and (#theme.attr('showFlags') == null or #theme.attr('showFlags'))) or !#module.isPresent('Theme')}">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
         <span id="selectedLocale" th:utext="${session.blLocale.localeCode}" style="display: none" ></span>
         <th:block th:switch="${session.blLocale.localeCode}">
